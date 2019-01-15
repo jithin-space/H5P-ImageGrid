@@ -1,0 +1,235 @@
+.h5p-image-grid{
+  margin: 0 auto;
+}
+
+.h5p-image-grid .initContainer{
+  width:100%;
+  height:80vh;
+  display: block;
+}
+
+.h5p-image-grid .initImageContainer{
+  width:50%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  float:left;
+}
+
+.h5p-image-grid .initImageContainer .backgroundContainer{
+  width:100%;
+  background: url('../images/background-pattern.jpeg');
+  background-size: cover;
+  text-align: center;
+  height:100%;
+  top:0;
+  left:0;
+  position: absolute;
+  padding:2em;
+  box-sizing: border-box;
+}
+
+.h5p-image-grid .initImageContainer .backgroundContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+}
+
+.h5p-image-grid .initImageContainer .overlayContainer{
+  width:100%;
+
+  text-align: center;
+  height:100%;
+  top:0;
+  left:0;
+  position: absolute;
+  box-sizing: border-box;
+  padding:2em;
+  opacity: 0.5;
+}
+
+
+.h5p-image-grid .initImageContainer .overlayContainer .overlay{
+  background-image: url('../images/pattern.png');
+  background-size:contain;
+  background-repeat:repeat;
+  background-position: top left;
+    height: 100%;
+    width: 100%;
+
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+    /*object-fit: contain;
+    object-position: center;
+    margin: auto;*/
+}
+
+
+/*.h5p-image-grid .initImageContainer .image .overlay{
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  height: 50px;
+  width: 50px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+}*/
+
+.h5p-image-grid .initOptionContainer{
+  width:50%;
+  height:100%;
+  display: inline-block;
+  float:left;
+  position: relative;
+}
+
+.h5p-image-grid .initOptionContainer .difficulty-container{
+    position: absolute;
+    top:50%;
+    left:0%;
+    margin:-15% 0 0 15%;
+    max-width:250px;
+    width:60%;
+}
+
+.h5p-image-grid .initOptionContainer .difficulty-label{
+  font-size:1.2em;
+  font-weight: bold;
+  margin-bottom:0.5em;
+}
+
+.h5p-image-grid .initOptionContainer select{
+  width:100%;
+  padding:0.2em 0.4em 0.2em 0.4em;
+  margin-top:0.5em;
+  background-color: white;
+  border:1px solid grey;
+  font-weight: bold;
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+
+
+}
+
+.h5p-image-grid .initOptionContainer .difficulty-selector:before{
+  content: "\f0d7";
+  font-family: H5PFontAwesome4;
+  position: absolute;
+  right:5%;
+  top: 3em;
+  pointer-events:none;
+
+}
+
+.h5p-image-grid .initOptionContainer .checkbox-container{
+
+  margin-top:1.2em;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top:0;
+  left:0;
+  z-index:2;
+
+}
+.checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  border:1px solid grey;
+  background-color: white;
+
+}
+
+.checkbox-container label {
+  position:relative;
+  padding-left: 1.4em;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+
+
+
+.checkbox-container:hover .checkmark{
+      background-color: #eee;
+}
+.checkbox-container input:checked ~ .checkmark:before{
+  content: "\f00c";
+  font-family: H5PFontAwesome4;
+  color:blue;
+  position: absolute;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  top:0.2em;
+  left:0.1em;
+
+}
+
+
+/*To remove button from IE11, thank you Matt */
+.h5p-image-grid .initOptionContainer select::-ms-expand {
+     display: none;
+}
+
+.h5p-image-grid .initOptionContainer option{
+
+  padding:0.4em 0.6em 0.4em 0.6em;
+
+
+
+
+}
+
+
+.h5p-image-grid .initOptionContainer .start-puzzle-button-container{
+  margin-top:3em;
+  display: block;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*media query section*/
+
+@media only screen and (max-width: 576px) {
+  .h5p-image-grid .initImageContainer{
+    width:100%;
+    height:50%
+  }
+  .h5p-image-grid .initOptionContainer{
+    width:100%;
+    height:50%;
+  }
+
+}

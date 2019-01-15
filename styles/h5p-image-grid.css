@@ -1,0 +1,206 @@
+.h5p-image-grid{
+  width: 100%;
+  display:table;
+  border: 1px solid #eeeeee;
+  font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.h5p-image-grid .init-image-container{
+  display: table-cell;
+  width: 50%;
+  background: url('../images/background-pattern.jpeg');
+  background-size: cover;
+  text-align: center;
+  height:100%;
+  padding:2em;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+.h5p-image-grid .bg-container{
+  width:100%;
+}
+
+.h5p-image-grid .bg-container img{
+  width: 100%;
+
+}
+
+
+.h5p-image-grid  .overlay-container{
+  width:100%;
+  text-align: center;
+  height:100%;
+  top:0;
+  left:0;
+  position: absolute;
+  box-sizing: border-box;
+  padding:2em;
+  opacity: 0.5;
+  /*background-color: black;*/
+}
+
+.h5p-image-grid .overlay-container .overlay{
+  background-image: url('../images/pattern.png');
+  background-size:contain;
+  background-repeat:repeat;
+  background-position: top left;
+
+
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+    /*object-fit: contain;
+    object-position: center;
+    margin: auto;*/
+}
+
+.h5p-image-grid .options-container{
+  display:table-cell;
+  width:50%;
+  position: relative;
+  vertical-align: middle;
+}
+
+.h5p-image-grid .difficulty-container{
+  position: relative;
+  top:50%;
+  left:0%;
+  margin:-15% 0 0 15%;
+  max-width:250px;
+  width:60%;
+}
+
+.h5p-image-grid .difficulty-label{
+  font-size:1.2em;
+  font-weight: bold;
+  margin-bottom:0.5em;
+}
+
+.h5p-image-grid select{
+  width:100%;
+  padding:0.2em 0.4em 0.2em 0.4em;
+  margin-top:0.5em;
+  background-color: white;
+  border:1px solid grey;
+  font-weight: bold;
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.h5p-image-grid .difficulty-selector:before{
+  content: "\f0d7";
+  font-family: H5PFontAwesome4;
+  position: absolute;
+  right:5%;
+  top: 2.75em;
+  pointer-events:none;
+}
+
+.h5p-image-grid .checkbox-container{
+  margin: 5% 0 0 15%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.h5p-image-grid input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top:0;
+  left:0;
+  z-index:2;
+}
+
+.h5p-image-grid .checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  border:1px solid grey;
+  background-color: white;
+}
+
+.h5p-image-grid label{
+  position:relative;
+  padding-left: 1.4em;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.h5p-image-grid .checkbox-container:hover .checkmark{
+      background-color: #eee;
+}
+
+.h5p-image-grid .checkbox-container input:checked ~ .checkmark:before{
+  content: "\f00c";
+  font-family: H5PFontAwesome4;
+  color:blue;
+  position: absolute;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  top:0.2em;
+  left:0.1em;
+}
+
+.h5p-image-grid .start-puzzle-button{
+  margin: 5% 0 0 15%;
+}
+
+/*game area */
+
+.h5p-image-grid .status-container{
+  display:table;
+  width:100%;
+  padding:0.2em;
+
+}
+.h5p-image-grid .time-status, .h5p-image-grid .button-container{
+  display:table-cell;
+  vertical-align:middle;
+  padding-left:0.5em;
+}
+
+.h5p-image-grid .button-container{
+  text-align:right;
+  padding-right:0.5em;
+}
+
+.h5p-image-grid .button-container .status-button{
+  margin:0.2em;
+}
+
+/*testing part placing zone*/
+
+.placing-zone{
+  border: 2px solid blue;
+}
+.placing-zone-horizontal{
+  display:block;
+}
+.placing-zone-vertical {
+  display:table-cell;
+}
+.placing-image-container{
+  display:table-cell;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: contain;
+}
+
+.placing-image-container img{
+  min-width: 100%;
+
+}

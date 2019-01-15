@@ -1,0 +1,59 @@
+[
+        {
+                "label" : "Image",
+                "name" : "image",
+                "type" : "image"
+
+        },
+        {
+                  "name": "levels",
+                  "type": "select",
+                  "label": "Levels",
+                  "description": "Select Difficulty Levels",
+                  "options": [
+                    {
+                        "label": "3x3",
+                        "value" : "3"
+                    },
+                    {
+                      "label" : "4x4",
+                      "value" : "4"
+                    },
+                    {
+                         "label" : "5X5",
+                         "value" : "5"
+                    },
+                    {
+                         "label" : "6X6",
+                         "value" : "6"
+                    },
+                    {
+                         "label" : "7X7",
+                         "value" : "7"
+                    }
+                  ],
+                  "default" : "3"
+        },
+        {
+                  "name" : "chooseDifficulty",
+                  "label" : "Allow user to choose difficulty",
+                  "type" : "select",
+                  "alignment" : "horizontal",
+                  "widget" : "radioGroup",
+                  "options" : [
+                    {
+                      "value" : "true",
+                      "label" : "Yes"
+
+                    },
+                    {
+                      "value" : "false",
+                      "label" : "No"
+
+                    }
+                  ],
+                  "default" : "true"
+
+        }
+
+]

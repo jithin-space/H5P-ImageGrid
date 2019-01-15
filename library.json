@@ -1,0 +1,64 @@
+{
+        "title": "Image Grid",
+        "description": "Place the image fragments in proper position to reconstruct the image",
+        "majorVersion": 1,
+        "minorVersion": 6,
+        "patchVersion": 2,
+        "runnable": 1,
+        "machineName": "H5P.ImageGrid",
+        "author": "H5P-SPACE",
+        "license": "MIT",
+        "embedTypes": ["iframe"],
+        "preloadedCss": [
+                {
+                        "path": "styles/h5p-image-grid.css"
+                }
+        ],
+        "preloadedJs": [
+                {
+                        "path": "js/h5p-image-grid.js"
+                },
+                {
+                        "path": "js/h5p-image-grid-fragment.js"
+                },
+                {
+                        "path": "js/h5p-image-grid-timer.js"
+                },
+                {
+                        "path": "js/h5p-image-grid-placing-zone.js"
+                }
+        ],
+        "preloadedDependencies": [
+          {
+
+                      "machineName":"H5P.JoubelUI",
+                      "majorVersion":1,
+                      "minorVersion":3
+
+          },
+          {
+      			"machineName": "FontAwesome",
+      			"majorVersion": 4,
+      			"minorVersion": 5
+      		},
+          {
+                      "machineName":"jQuery.ui",
+                      "majorVersion":1,
+                      "minorVersion":10,
+                      "defaultStyles":true
+          },
+          {
+            "machineName":"H5P.Timer",
+            "majorVersion":0,
+            "minorVersion":4
+          }
+        ],
+        "editorDependencies": [
+                {
+                        "machineName": "H5PEditor.RadioGroup",
+                        "majorVersion": 1,
+                        "minorVersion": 1
+                }
+        ]
+
+}
