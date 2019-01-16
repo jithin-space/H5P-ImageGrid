@@ -6,6 +6,8 @@
 
     const that = this;
     EventDispatcher.call(that);
+    that.fWidth= fWidth;
+    that.fHeight= fHeight;
     that.fragmentId = id;
     that.bWidth = Math.floor(image.width/level);
     that.bHeight = Math.floor(image.height/level);
@@ -19,7 +21,7 @@
         .css('height',that.bHeight+'px')
         .css('width',that.bWidth+'px');
       that.$fragment.css('transform','scale('+fWidth/that.bWidth+','+fHeight/that.bHeight+')');
-      // that.$fragment.css('transform-origin','0px 0px');
+      that.$fragment.css('transform-origin','0px 0px');
       that.$fragment.appendTo($container);
     }
 

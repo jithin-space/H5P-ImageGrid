@@ -185,6 +185,7 @@
 
 .placing-zone{
   border: 2px solid blue;
+  position: relative;
 }
 .placing-zone-horizontal{
   display:block;
@@ -203,4 +204,10 @@
 .placing-image-container img{
   min-width: 100%;
 
+}
+
+.li-class{
+  position: absolute;
+  top:0;
+  left:0;
 }

@@ -245,7 +245,7 @@ H5P.ImageGrid = (function ($,UI) {
 
       while (spd > 0) {
         // TODO: Next Day
-        that.placingZones.push(new ImageGrid.PlacingZone(zoneWidth,zoneHeight,orientation,that.fZone[index]));
+        that.placingZones.push(new ImageGrid.PlacingZone(zoneWidth,zoneHeight,orientation,that.fZone[index*spd+spd-1]));
         spd--;
       }
 
@@ -289,7 +289,7 @@ H5P.ImageGrid = (function ($,UI) {
     let imageWidth = (this.gameLevel)*cellWidth;
 
     //TODO: landscape & portrait complication checking to be done
-    let $imageDiv = $('<div class="placing-image-container" style="height:'+imageHeight+'px;width:'+imageWidth+'px"></div>').appendTo(that.$playArea);
+    let $imageDiv = $('<div class="placing-image-container" style="height:'+0+'px;width:'+imageWidth+'px"></div>').appendTo(that.$playArea);
     // need to calculate height;
     $imageDiv.css({
       'background-image': 'url('+H5P.getPath(this.gridSrcImage)+')'
